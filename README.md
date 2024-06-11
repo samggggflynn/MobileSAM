@@ -35,7 +35,7 @@
  
 :star: **MobileSAM performs on par with the original SAM (at least visually)** and keeps exactly the same pipeline as the original SAM except for a change on the image encoder. Specifically, we replace the original heavyweight ViT-H encoder (632M) with a much smaller Tiny-ViT (5M). On a single GPU, MobileSAM runs around 12ms per image: 8ms on the image encoder and 4ms on the mask decoder. 
 
-* The comparison of ViT-based image encoder is summarzed as follows: 
+* The comparison of ViT-based image encoder is summarized as follows: 
 
     Image Encoder                                      | Original SAM | MobileSAM 
     :-----------------------------------------:|:---------|:-----:
@@ -75,8 +75,8 @@ Whole Pipeline (Enc+Dec)                                      | FastSAM | Mobile
 Parameters      |  68M   | 9.66M
 Speed      |  64ms  |12ms
 
-:muscle: **Does MobileSAM aign better with the original SAM than FastSAM? Yes!** 
-FastSAM is suggested to work with multiple points, thus we compare the mIoU with two prompt points (with different pixel distances) and show the resutls as follows. Higher mIoU indicates higher alignment. 
+:muscle: **Does MobileSAM align better with the original SAM than FastSAM? Yes!** 
+FastSAM is suggested to work with multiple points, thus we compare the mIoU with two prompt points (with different pixel distances) and show the results as follows. Higher mIoU indicates higher alignment. 
 mIoU                                     | FastSAM | MobileSAM 
 :-----------------------------------------:|:---------|:-----:
 100      |  0.27   | 0.73
